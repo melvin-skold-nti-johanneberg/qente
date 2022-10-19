@@ -16,12 +16,16 @@ body {
     background-color: var(--gray);
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 .wrapper {
     display: grid;
     grid-template-areas: 
     "mn"
     "ft";
-    width: 100vw;
+    width: 100%;
 }
 
 .nav {
@@ -118,7 +122,7 @@ h1 {
 }
 .arrow-box {
     height: 10vh;
-    width: 32px;
+    width: 64px;
     bottom: 6em;
     position: absolute;
     display: flex;
