@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 :root {
@@ -109,10 +108,14 @@ h1 {
     grid-area: s3;
     background-color: var(--white);
     height: 100vh;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
     box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
     position: relative;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-bottom: 8em;
 }
 
 .arrow {
@@ -185,4 +188,42 @@ h3 {
 #logo {
     width: 120px;
     padding-left: 5em;
+}
+
+.card {
+    background-color: var(--gray);
+    border-radius: 15%;
+    width: 17em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+.card-image1 {
+    background-image: url(/img/markus-schmidt-wwTmJu0HxDg-unsplash.jpg);
+    background-size: cover;
+    border-radius: 15%;
+    width: 15em;
+    height: 10em;
+    margin-bottom: 0.5em;
+}
+
+.card-title {
+    color: var(--darkgray);
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.card-info, .card-date {
+    color: var(--darkgray);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.s3 h2 {
+    margin-bottom: 1.5em;
 }
