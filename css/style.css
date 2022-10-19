@@ -106,27 +106,36 @@ h1 {
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
     box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .arrow {
     width: 32px;
     aspect-ratio: 1/1;
+    background-color: transparent;
+    padding-top: 0em;    
+    animation: arrow 1.5s infinite ease-in-out;
+}
+.arrow-box {
+    height: 10vh;
+    width: 32px;
     bottom: 6em;
     position: absolute;
-    background-color: transparent;
-    animation: arrow 1.5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
 @keyframes arrow {
     0% {
-            bottom: 6em;
+            padding-top: 0em;
     }
     50% {
-            bottom: 8em;
+            padding-top: 3em;
     }
 
     100% {
-            bottom: 6em;
+            padding-top: 0em;
       }
   }
 
