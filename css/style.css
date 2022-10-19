@@ -121,6 +121,7 @@ h1 {
     background-color: transparent;
     padding-top: 0em;    
     animation: arrow 1.5s infinite ease-in-out;
+    cursor: pointer;
 }
 .arrow-box {
     height: 10vh;
