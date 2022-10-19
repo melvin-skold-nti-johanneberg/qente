@@ -36,14 +36,13 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     white-space: nowrap;
-    padding-top: 2em;
     align-items: center;
     background-color: transparent;
-    transition: all 1s;
     text-align: center;
-    width: 100vw;
+    width: 90vw;
+    padding-right: 5em;
 }
 
 .nav li {
@@ -153,10 +152,21 @@ p {
     align-items: center;
     display: flex;
     border-radius: 4em;
+    flex-wrap: nowrap;
     
+}
+
+.button :hover {
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 
 h3 {
     color: var(--white);
+}
+
+#logo {
+    width: 120px;
+    padding-left: 5em;
 }
