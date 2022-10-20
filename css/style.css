@@ -35,6 +35,8 @@ html {
     width: 100vw;
     transition: all 1s ease;
     opacity: 100%;
+    z-index: 3;
+    transition: all 0.5s ease;
 }
 
 .navLinks {
@@ -124,6 +126,7 @@ h1 {
     background-color: transparent;
     padding-top: 0em;    
     animation: arrow 1.5s infinite ease-in-out;
+    z-index: 2;
 }
 .arrow-box {
     height: 10vh;
@@ -187,6 +190,7 @@ h3 {
 #logo {
     width: 120px;
     padding-left: 5em;
+    transition: all 0.5s ease;
 }
 
 .card {
@@ -225,4 +229,9 @@ h3 {
 
 .s3 h2 {
     margin-bottom: 1.5em;
+}
+
+.card-arrow {
+    margin-top: 1em;
+    width: 24px;
 }

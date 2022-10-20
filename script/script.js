@@ -8,15 +8,19 @@ function scrollArrow(x, y) {
 
 window.onscroll = function() {navScroll()};
 function navScroll() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         
-        document.querySelector(".nav").style.opacity = "0%";
-        document.querySelector(".nav").style.top = "-100px";
+        document.querySelector(".nav").style.backgroundColor = "var(--white)";
+        document.querySelector(".nav").style.top = "-30px";
+        document.querySelector("#logo").style.width = "90px";
+        document.querySelector(".nav").style.paddingTop = "1.5em";
 
     } else {
         
-        document.querySelector(".nav").style.opacity = "100%";
+        document.querySelector(".nav").style.backgroundColor = "transparent";
         document.querySelector(".nav").style.top = "0px";
+        document.querySelector("#logo").style.width = "120px";
+        document.querySelector(".nav").style.paddingTop = "0em";
 
     }
 }
