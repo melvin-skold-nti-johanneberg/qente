@@ -224,15 +224,26 @@ h3 {
     width: 24px;
 }
 
+.gradient {
+    background: linear-gradient(90deg, var(--white) 10%, rgba(255,255,255,0) 100%);
+    filter: blur(4);
+    z-index: 6;
+    position: absolute;
+    height: 20em;
+    width: 30vw;
+}
+
 .card-wrapper {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 21%;
-
+    grid-auto-columns: 24%;
+    width: 100vw;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
-
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+}
 .card {
     background-color: var(--gray);
     border-radius: 15%;
@@ -241,6 +252,9 @@ h3 {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
     margin-bottom: 2em;
 }

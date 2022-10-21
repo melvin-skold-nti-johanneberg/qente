@@ -25,3 +25,12 @@ function navScroll() {
     }
 }
 navScroll()
+
+function CardGradientScrollRight() {
+    if (document.querySelector(".gradient").scrollLeft > 10) {
+        document.querySelector(".gradient").style.background = "linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%)";
+    } else {
+        ocument.querySelector(".gradient").style.background = "transparent";
+
+    }
+}
