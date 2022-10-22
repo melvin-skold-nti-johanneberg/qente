@@ -234,6 +234,7 @@ h3 {
     position: absolute;
     height: 20em;
     width: 30vw;
+    pointer-events: none
 }
 
 .card-wrapper {
@@ -249,6 +250,7 @@ h3 {
 .card-wrapper:hover {
     scrollbar-color:unset;
 }
+
 .card {
     background-color: var(--gray);
     border-radius: 15%;
