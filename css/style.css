@@ -234,7 +234,8 @@ h3 {
     position: absolute;
     height: 20em;
     width: 30vw;
-    pointer-events: none
+    pointer-events: none;
+    transition: 1s ease all;
 }
 
 .card-wrapper {

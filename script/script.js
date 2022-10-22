@@ -26,8 +26,9 @@ function navScroll() {
 }
 navScroll()
 
-function CardGradientScrollRight() {
-    if (document.querySelector(".card-wrapper").scrollBy >= (100, 0)) {
+
+document.querySelector(".card-wrapper").onscroll = function CardGradientScrollRight() {
+    if (document.querySelector(".card-wrapper").scrollLeft > 1) {
         document.querySelector(".gradient").style.background = "linear-gradient(90deg, var(--white) 10%, rgba(255,255,255,0) 100%)";
     }
     else {
