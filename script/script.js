@@ -26,15 +26,16 @@ function navScroll() {
 }
 navScroll()
 
+const maxScrollLeft = document.querySelector(".card-wrapper").scrollWidth - document.querySelector(".card-wrapper").clientWidth;
 
 document.querySelector(".card-wrapper").onscroll = function CardGradientScroll() {
-    if (document.querySelector(".card-wrapper").scrollLeft > 300) {
-        document.querySelector(".gradientLeft").style.opacity = "100%";
-        document.querySelector(".gradientRight").style.opacity = "0%";
+    if (document.querySelector(".card-wrapper").scrollLeft > maxScrollLeft/2) {
+        document.querySelector(".gradientLeft").style.opacity = "1";
+        document.querySelector(".gradientRight").style.opacity = "0";
     }
     else {
-        document.querySelector(".gradientLeft").style.opacity = "0%";
-        document.querySelector(".gradientRight").style.opacity = "100%";
+        document.querySelector(".gradientLeft").style.opacity = "0";
+        document.querySelector(".gradientRight").style.opacity = "1";
     }
     
 }
