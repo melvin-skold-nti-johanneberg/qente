@@ -26,24 +26,33 @@ function navScroll() {
 }
 navScroll()
 
+const cardWrapper = document.querySelector(".card-wrapper");
+const gradLeft = document.querySelector(".gradientLeft");
+const gradRight = document.querySelector(".gradientRight");
+const arrowBoxLeft = document.querySelector("#box-left");
+const arrowBoxRight = document.querySelector("#box-right");
+
+
 const maxScrollLeft = document.querySelector(".card-wrapper").scrollWidth - document.querySelector(".card-wrapper").clientWidth;
 
 document.querySelector(".card-wrapper").onscroll = function CardGradientScroll() {
-    if (document.querySelector(".card-wrapper").scrollLeft > maxScrollLeft/2) {
-        document.querySelector(".gradientLeft").style.opacity = "1";
-        document.querySelector(".gradientRight").style.opacity = "0";
+    if (cardWrapper.scrollLeft > maxScrollLeft/2) {
+        gradLeft.style.opacity = "1";
+        gradRight.style.opacity = "0";
 
-        document.querySelector("#box-left").style.opacity = "1"
-        document.querySelector("#box-right").style.opacity = "0"
+        arrowBoxLeft.style.opacity = "1"
+        arrowBoxRight.style.opacity = "0"
 
     }
     else {
-        document.querySelector(".gradientLeft").style.opacity = "0";
-        document.querySelector(".gradientRight").style.opacity = "1";
+        gradLeft.style.opacity = "0";
+        gradRight.style.opacity = "1";
 
-        document.querySelector("#box-left").style.opacity = "0"
-        document.querySelector("#box-right").style.opacity = "1"
+        arrowBoxLeft.style.opacity = "0"
+        arrowBoxRight.style.opacity = "1"
     }
-
 }
-CardGradientScroll()
+
+function cardWrapperScrollRight(x, y) {
+    cardWrapper.scrollBy(x, y);
+}
