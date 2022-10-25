@@ -32,10 +32,18 @@ document.querySelector(".card-wrapper").onscroll = function CardGradientScroll()
     if (document.querySelector(".card-wrapper").scrollLeft > maxScrollLeft/2) {
         document.querySelector(".gradientLeft").style.opacity = "1";
         document.querySelector(".gradientRight").style.opacity = "0";
+
+        document.querySelector("#box-left").style.opacity = "1"
+        document.querySelector("#box-right").style.opacity = "0"
+
     }
     else {
         document.querySelector(".gradientLeft").style.opacity = "0";
         document.querySelector(".gradientRight").style.opacity = "1";
+
+        document.querySelector("#box-left").style.opacity = "0"
+        document.querySelector("#box-right").style.opacity = "1"
     }
-    
+
 }
+CardGradientScroll()
