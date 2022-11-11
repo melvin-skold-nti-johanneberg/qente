@@ -89,6 +89,24 @@ html {
     padding-top: 120px;
 }
 
+.nav-dropdown-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5em;
+    width: 90vw;
+}
+
+.nav-dropdown-ul {
+    list-style: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-weight: 700;
+    cursor: pointer;
+    border-right: solid 1px black;
+}
+
+
 .navText:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
