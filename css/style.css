@@ -115,8 +115,17 @@ html {
 .nav-dropdown-ul {
     list-style: none;
     font-weight: 700;
-    cursor: pointer;
     text-align: center;
+}
+
+.nav-dropdown-ul li {
+    cursor: pointer;
+}
+
+.white-p {
+    color: var(--white);
+    pointer-events: none;
+    display: none;
 }
 
 
@@ -289,6 +298,7 @@ h3 {
     top: 4em;
     width: 120px;
     transition: all 0.5s ease;
+    opacity: 0;
 }
 
 .card-image1 {
