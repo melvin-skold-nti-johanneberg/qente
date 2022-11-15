@@ -56,7 +56,6 @@ html {
 .nav li {
     list-style: none;
     font-weight: 700;
-    cursor: pointer;
 }
 .navLinks p:nth-child(1) {
     width: 18vw;
@@ -73,6 +72,23 @@ html {
 .navLinks p:nth-child(5) {
     width: 18vw;
 }
+
+.navLinks li:nth-child(1) {
+    cursor: pointer;
+}
+.navLinks li:nth-child(2) {
+    cursor: default;
+}
+.navLinks li:nth-child(3) {
+    cursor: pointer;
+}
+.navLinks li:nth-child(4) {
+    cursor: default;
+}
+.navLinks li:nth-child(5) {
+    cursor: default;
+}
+
 .navText {
     display: inline-block;
     position: relative;
