@@ -11,8 +11,8 @@ function navScroll() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         
         document.querySelector(".nav").style.backgroundColor = "var(--white)";
-        document.querySelector(".nav").style.top = "-30px";
-        document.querySelector("#logo").style.width = "90px";
+        document.querySelector(".nav").style.top = "-50px";
+        document.querySelector("#logo").style.width = "120px";
         document.querySelector(".nav").style.paddingTop = "1.5em";
 
     } else {
@@ -55,4 +55,30 @@ document.querySelector(".card-wrapper").onscroll = function CardGradientScroll()
 
 function cardWrapperScrollRight(x, y) {
     cardWrapper.scrollBy(x, y);
+}
+
+
+const navText = document.getElementById("navText1");
+const dropdownMenu = document.getElementById("nav-dropdown");
+
+let elementsArray = document.querySelectorAll(".navText");
+dropdownMenu.addEventListener("mouseout", navDropdownHoverOut);
+dropdownMenu.addEventListener("mouseover", navDropdownListHoverOver);
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener("mouseover", function(navDropdownHoverOver) {
+        //this function does stuff
+        dropdownMenu.style.display = "flex";
+        dropdownMenu.style.zIndex = "10";
+    });
+});
+
+function navDropdownListHoverOver() {
+    dropdownMenu.style.display = "flex";
+    dropdownMenu.style.zIndex = "10";
+}
+
+function navDropdownHoverOut() {
+        dropdownMenu.style.display = "none";
+        dropdownMenu.style.zIndex = "-10";
 }
