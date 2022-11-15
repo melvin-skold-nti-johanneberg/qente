@@ -83,7 +83,7 @@ html {
     cursor: pointer;
 }
 .navLinks li:nth-child(4) {
-    cursor: default;
+    cursor: pointer;
 }
 .navLinks li:nth-child(5) {
     cursor: default;
@@ -139,8 +139,11 @@ html {
 
 .nav-dropdown-ul li {
     cursor: pointer;
-    margin-bottom: 0.33em;
+    margin-bottom: 0.66em;
     pointer-events: all;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .white-p {
