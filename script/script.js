@@ -11,7 +11,7 @@ function navScroll() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         
         document.querySelector(".nav").style.backgroundColor = "var(--white)";
-        document.querySelector(".nav").style.top = "-50px";
+        document.querySelector(".nav").style.top = "-30px";
         document.querySelector("#logo").style.width = "120px";
         document.querySelector(".nav").style.paddingTop = "1.5em";
 
@@ -68,17 +68,23 @@ dropdownMenu.addEventListener("mouseover", navDropdownListHoverOver);
 elementsArray.forEach(function(elem) {
     elem.addEventListener("mouseover", function(navDropdownHoverOver) {
         //this function does stuff
-        dropdownMenu.style.display = "flex";
-        dropdownMenu.style.zIndex = "10";
+        dropdownMenu.style.top = "0"
+        dropdownMenu.style.paddingTop = "4em"
+        document.querySelector(".nav").style.backgroundColor = "var(--white)";
     });
 });
 
 function navDropdownListHoverOver() {
-    dropdownMenu.style.display = "flex";
-    dropdownMenu.style.zIndex = "10";
+    dropdownMenu.style.top = "0"
+    dropdownMenu.style.paddingTop = "4em"
+    document.querySelector(".nav").style.backgroundColor = "var(--white)";
+
 }
 
 function navDropdownHoverOut() {
-        dropdownMenu.style.display = "none";
-        dropdownMenu.style.zIndex = "-10";
+        document.querySelector(".nav").style.backgroundColor = "var(--white)";
+        dropdownMenu.style.top = "-50vh"
+        dropdownMenu.style.paddingTop = "0"
 }
+
+navDropdownHoverOut()
