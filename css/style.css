@@ -208,7 +208,6 @@ main {
 .s1 {
     grid-area: s1;
     background-image: url(/img//white/markus-schmidt-wwTmJu0HxDg-unsplash.jpg);
-    background-size: cover;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     height: 90vh;
@@ -222,10 +221,19 @@ main {
 
 .s1h {
     background-image: url(/img/QÂ´ente\ och\ Kronhusparken\ profilbild\ juni2017.jpg);
+    background-size: cover;
 }
 
 .s1k {
     background-image: url(/img/white/markus-schmidt-wwTmJu0HxDg-unsplash.jpg);
+    background-size: cover;
+}
+
+.s1o {
+    background-image: url(/img/white/omoss.jpg);
+    background-position-x: right;
+    background-position-y: -1em;
+    background-size: 120%;
 }
 
 h1 {
