@@ -87,4 +87,3 @@ function navDropdownHoverOut() {
         dropdownMenu.style.paddingTop = "0"
 }
 
-navDropdownHoverOut()
