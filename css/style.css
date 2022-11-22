@@ -411,11 +411,14 @@ h3 {
     text-transform: uppercase;
     font-weight: lighter;
     background-size: cover;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.15);
     
 }
 
 #image1 {
-    background-image: url(/img/massage.jpeg);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
+    background-size: cover;
+
 }
 
 
