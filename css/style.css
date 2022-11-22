@@ -314,7 +314,7 @@ p {
     width: 100%;
 }
 
-#button {
+.button {
     background-color: var(--red);
     padding: 1.5em 4em;
     align-items: center;
@@ -330,11 +330,15 @@ p {
     text-align: center;
 }
 
-#button:hover {
+.button:hover {
     font-size: 1em;
     padding: 1.6em 4.1em;
     transform-origin: center;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+.button-box {
+    height: 10vh;
 }
 
 
@@ -395,34 +399,84 @@ h3 {
     padding-top: 5em;
     padding-bottom: 2em;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 }
 
 .images-s3k {
     height: 30vh;
-    aspect-ratio: 1.5/1;
+    width: 70vw;
     align-items: flex-end;
     justify-content: center;
     display: flex;
     margin-left: 2em;
     margin-right: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 8em;
     background-color: var(--gray);
-    color: black;
+    color: var(--red);
     text-transform: uppercase;
     font-weight: lighter;
     background-size: cover;
-    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.15);
+    letter-spacing: 6px;
+    padding-bottom: 1em;
+}
+
+.images-s3k:nth-child(7) {
+    margin-bottom: 4em;
+}
+
+.images-s3k a {
+    color: var(--red);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: larger;
     
 }
 
-#image1 {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
-    background-size: cover;
+.images-s3k a:hover {
+    color: black;
+}
 
+.s3k h2 {
+    text-align: center;
+    align-self: center;
+    display: flex;
+    max-width: 100vw;
+    margin-bottom: 2em;
+}
+
+#image1 {
+    background: linear-gradient(0deg, var(--white) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
+    background-size: cover;
+}
+
+#image2 {
+    background: linear-gradient(0deg, var(--white) 5%, rgba(255,255,255,0) 80%), url(/img/white/energi.jpg);
+    background-size: cover;
+}
+
+#image3 {
+    background: linear-gradient(0deg, var(--white) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
+    background-size: cover;
+}
+
+#image4 {
+    background: linear-gradient(0deg, var(--white) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
+    background-size: cover;
+}
+
+#image5 {
+    background: linear-gradient(0deg, var(--white) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
+    background-size: cover;
+}
+
+#image6 {
+    background: linear-gradient(0deg, var(--white) 5%, rgba(255,255,255,0) 80%), url(/img/white/massage-white.jpg);
+    background-size: cover;
 }
 
 
-.s3 h2 {
+.s3h h2 {
     display: flex;
     justify-self: center;
     margin-bottom: 1.5em;

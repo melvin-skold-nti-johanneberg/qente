@@ -26,6 +26,35 @@ function navScroll() {
 }
 navScroll()
 
+const navText = document.getElementById("navText1");
+const dropdownMenu = document.getElementById("nav-dropdown");
+
+let elementsArray = document.querySelectorAll(".navText");
+dropdownMenu.addEventListener("mouseout", navDropdownHoverOut);
+dropdownMenu.addEventListener("mouseover", navDropdownListHoverOver);
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener("mouseover", function(navDropdownHoverOver) {
+        //this function does stuff
+        dropdownMenu.style.top = "0"
+        dropdownMenu.style.paddingTop = "4em"
+        document.querySelector(".nav").style.backgroundColor = "var(--white)";
+    });
+});
+
+function navDropdownListHoverOver() {
+    dropdownMenu.style.top = "0"
+    dropdownMenu.style.paddingTop = "4em"
+    document.querySelector(".nav").style.backgroundColor = "var(--white)";
+
+}
+
+function navDropdownHoverOut() {
+        document.querySelector(".nav").style.backgroundColor = "var(--white)";
+        dropdownMenu.style.top = "-50vh"
+        dropdownMenu.style.paddingTop = "0"
+}
+
 const cardWrapper = document.querySelector(".card-wrapper");
 const gradLeft = document.querySelector(".gradientLeft");
 const gradRight = document.querySelector(".gradientRight");
@@ -56,34 +85,3 @@ document.querySelector(".card-wrapper").onscroll = function CardGradientScroll()
 function cardWrapperScrollRight(x, y) {
     cardWrapper.scrollBy(x, y);
 }
-
-
-const navText = document.getElementById("navText1");
-const dropdownMenu = document.getElementById("nav-dropdown");
-
-let elementsArray = document.querySelectorAll(".navText");
-dropdownMenu.addEventListener("mouseout", navDropdownHoverOut);
-dropdownMenu.addEventListener("mouseover", navDropdownListHoverOver);
-
-elementsArray.forEach(function(elem) {
-    elem.addEventListener("mouseover", function(navDropdownHoverOver) {
-        //this function does stuff
-        dropdownMenu.style.top = "0"
-        dropdownMenu.style.paddingTop = "4em"
-        document.querySelector(".nav").style.backgroundColor = "var(--white)";
-    });
-});
-
-function navDropdownListHoverOver() {
-    dropdownMenu.style.top = "0"
-    dropdownMenu.style.paddingTop = "4em"
-    document.querySelector(".nav").style.backgroundColor = "var(--white)";
-
-}
-
-function navDropdownHoverOut() {
-        document.querySelector(".nav").style.backgroundColor = "var(--white)";
-        dropdownMenu.style.top = "-50vh"
-        dropdownMenu.style.paddingTop = "0"
-}
-
