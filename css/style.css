@@ -276,6 +276,9 @@ h1 {
     animation: arrow 1.5s infinite ease-in-out;
     z-index: 2;
 }
+#arrowleft, #arrowright {
+    animation: none;
+}
 
 a {
     text-decoration: none;
@@ -410,7 +413,12 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-
+.s3k hr {
+    border-top: 1px solid var(--darkgray);
+    width: 65vw;
+    margin-bottom: 4em;
+    margin-top: 4em;
+}
 .images-s3k {
     height: 30vh;
     width: 70vw;
@@ -419,7 +427,6 @@ h3 {
     display: flex;
     margin-left: 2em;
     margin-right: 2em;
-    margin-bottom: 8em;
     background-color: var(--gray);
     color: var(--red);
     text-transform: uppercase;
