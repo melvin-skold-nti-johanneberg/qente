@@ -339,6 +339,7 @@ p {
     transition: all 0.3s ease;
     transform-origin: center;
     text-align: center;
+    max-width: none;
 }
 
 .button:hover {
@@ -413,7 +414,7 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-.s3k div:nth-child(odd) {
+.line {
     border-top: 1px solid var(--darkgray);
     width: 65vw;
     margin-bottom: 4em;
