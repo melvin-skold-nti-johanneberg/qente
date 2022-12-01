@@ -142,7 +142,7 @@ html {
     font-weight: 700;
     text-align: center;
 }
-
+ 
 .nav-dropdown-ul li {
     cursor: pointer;
     margin-bottom: 0.66em;
@@ -501,7 +501,23 @@ h3 {
     width: 80%;
 }
 
+#artshop_button {
+    width: 5%;
+    justify-content: center;
+    text-align: center;
+}
+.button_box {
+    margin-top: 2em;
+    height: 10vh;
+    margin-left: 1em;
+}
 
+.s3o {
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 3em;
+}
 
 .gradientLeft {
     background-image: linear-gradient(90deg, var(--white) 10%, rgba(255,255,255,0) 100%);
