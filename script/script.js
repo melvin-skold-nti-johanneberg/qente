@@ -68,13 +68,34 @@ const mobileSize = window.matchMedia("(max-width: 767px)");
 let navList = document.querySelector(".navLinks");
 let navItem = navList.querySelectorAll(".navLinks > li")
 var navListChild = navList.lastElementChild
+var createBurgerDiv = document.createElement("div")
+
+var createBurgerLine1 = document.createElement("div")
+var createBurgerLine2 = document.createElement("div")
+var createBurgerLine3 = document.createElement("div")
 
 if (mobileSize.matches) {
     while (navListChild) {
     navList.removeChild(navListChild)
     navListChild = navList.lastElementChild;
-    }
-    console.log("works?")
+    console.log("loop works!")
+    } 
+
+    navList.appendChild(createBurgerDiv) /* Create the burger div */
+    createBurgerDiv.className = "burgerMenu"; /* Give the burger div a classname */
+    console.log("div created!")
+
+    createBurgerDiv.append(createBurgerLine1, createBurgerLine2, createBurgerLine3) /* Create Lines */
+    console.log("lines created!")
+
+    createBurgerLine1.className = "burgerLine" /* Give burgerline class name */
+    createBurgerLine2.className = "burgerLine" /* <-----> */
+    createBurgerLine3.className = "burgerLine" /* <-----> */
+    console.log("renamed classnames")
+
+
+
+    
 }
 
 

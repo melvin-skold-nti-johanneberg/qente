@@ -721,4 +721,23 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .arrow-box {
         position: inherit;
     }
+    .navLinks {
+        width: auto;
+    }
+    .burgerMenu {
+        margin-right: 1em;
+        width: 40px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .burgerLine {
+        background-color: black;
+        height: 2px;
+        width: 40px;
+        border-radius: 20px;
+    }
+    .burgerLine:nth-child(1) {
+    }
 }
