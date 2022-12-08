@@ -91,9 +91,9 @@ if (mobileSize.matches) { /* Media query box */
     createBurgerDiv.append(createBurgerLine1, createBurgerLine2, createBurgerLine3) /* Create Lines */
     console.log("lines created!")
 
-    createBurgerLine1.className = "burgerLine" /* Give burgerline class name */
-    createBurgerLine2.className = "burgerLine" /* <-----> */
-    createBurgerLine3.className = "burgerLine" /* <-----> */
+    createBurgerLine1.className = "burgerLine1" /* Give burgerline class name */
+    createBurgerLine2.className = "burgerLine2" /* <-----> */
+    createBurgerLine3.className = "burgerLine3" /* <-----> */
     console.log("renamed classnames")
 
 }
@@ -103,6 +103,11 @@ var burgerMenuBox = document.querySelector(".burgerMenuBox");
 
 function toggleBurgerMenu() { /* function to toggle burgermenu */
     burgerMenuBox.classList.toggle("burgerMenuToggle");
+    createBurgerLine1.classList.toggle("burgerLine1On")
+    createBurgerLine2.classList.toggle("burgerLine2On")
+    createBurgerLine3.classList.toggle("burgerLine3On")
+
+
     console.log("Toggled burger!")
 }
 

@@ -733,11 +733,28 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         justify-content: space-between;
         z-index: 20;
     }
-    .burgerLine {
+    .burgerLine1, .burgerLine2, .burgerLine3 {
         background-color: black;
         height: 2px;
         width: 40px;
         border-radius: 20px;
+        transition: all ease 0.3s;
+
+    }
+    .burgerLine1 {
+        width: 30px;
+    }
+    .burgerLine2 {
+        width: 20px;
+    }
+    .burgerLine1On {
+        width: 40px;
+    }
+    .burgerLine2On {
+        width: 30px;
+    }
+    .burgerLine3On {
+        width: 20px;
     }
     .burgerMenuBox {
         height: 100vh;
