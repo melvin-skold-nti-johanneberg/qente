@@ -724,13 +724,14 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .navLinks {
         width: auto;
     }
-    .burgerMenu {
+    #burgerMenu {
         margin-right: 1em;
         width: 40px;
         height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        z-index: 20;
     }
     .burgerLine {
         background-color: black;
@@ -738,6 +739,18 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         width: 40px;
         border-radius: 20px;
     }
-    .burgerLine:nth-child(1) {
+    .burgerMenuBox {
+        height: 100vh;
+        width: 66.6vw;
+        position: fixed;
+        right: -66.6vw;
+        z-index: 19;
+        background-color: var(--white);
+        box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
+        transition: right 0.5s ease;
+    }
+
+    .burgerMenuToggle {
+    right: 0; 
     }
 }

@@ -70,11 +70,14 @@ let navItem = navList.querySelectorAll(".navLinks > li")
 var navListChild = navList.lastElementChild
 var createBurgerDiv = document.createElement("div")
 
-var createBurgerLine1 = document.createElement("div")
+var createBurgerLine1 = document.createElement("div") /* for lines */
 var createBurgerLine2 = document.createElement("div")
-var createBurgerLine3 = document.createElement("div")
+var createBurgerLine3 = document.createElement("div")  /* ^^^^^^ */
 
-if (mobileSize.matches) {
+var createBurgerMenuBox = document.createElement("div") /* för menubox */
+var main = document.querySelector("main") /* ^^^^^^ */
+
+if (mobileSize.matches) { /* Media query box */
     while (navListChild) {
     navList.removeChild(navListChild)
     navListChild = navList.lastElementChild;
@@ -82,7 +85,7 @@ if (mobileSize.matches) {
     } 
 
     navList.appendChild(createBurgerDiv) /* Create the burger div */
-    createBurgerDiv.className = "burgerMenu"; /* Give the burger div a classname */
+    createBurgerDiv.id = "burgerMenu"; /* Give the burger div a classname */
     console.log("div created!")
 
     createBurgerDiv.append(createBurgerLine1, createBurgerLine2, createBurgerLine3) /* Create Lines */
@@ -93,13 +96,20 @@ if (mobileSize.matches) {
     createBurgerLine3.className = "burgerLine" /* <-----> */
     console.log("renamed classnames")
 
-
-
-    
+    main.prepend(createBurgerMenuBox) /* create burger menu box */
+    createBurgerMenuBox.className = "burgerMenuBox";
+    console.log("burger menu box created and classname given");
 }
 
+const burgerMenu = document.getElementById("burgerMenu"); 
+var burgerMenuBox = document.querySelector(".burgerMenuBox");
 
+function toggleBurgerMenu() { /* function to toggle burgermenu */
+    burgerMenuBox.classList.toggle("burgerMenuToggle");
+    console.log("Toggled burger!")
+}
 
+burgerMenu.addEventListener("touchstart", toggleBurgerMenu); /* listener */
 
 
 
