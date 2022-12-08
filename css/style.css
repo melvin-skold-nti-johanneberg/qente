@@ -55,8 +55,9 @@ html {
 
 .nav li {
     list-style: none;
-    font-weight: 700;
+    font-weight: lighter;
 }
+
 .navLinks p:nth-child(1) {
     width: 18vw;
 }
@@ -92,6 +93,7 @@ html {
 .navText {
     display: inline-block;
     position: relative;
+    height: 2em;
 
 }
 .navText::after {
@@ -112,7 +114,6 @@ html {
     width: 100vw;
     position: fixed;
     background-color: var(--white);
-    border: #6d6d6d;
     z-index: 20;
     justify-content: space-between;
     display: flex;
@@ -139,7 +140,7 @@ html {
 
 .nav-dropdown-ul {
     list-style: none;
-    font-weight: 700;
+    font-weight: lighter;
     text-align: center;
 }
  
@@ -247,7 +248,6 @@ h1 {
     padding-left: 5em;
     padding-right: 5em;
     padding-top: 5em;
-    padding-bottom: 8em;
 }
 
 .s2h {
@@ -255,6 +255,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 8em;
 }
 
 .s3 {
@@ -319,6 +320,14 @@ p {
 
 .text-wrapper {
     width: 60%;
+}
+
+.s2k {
+    padding-bottom: 5em;
+}
+
+.s2o {
+    padding-bottom: 5em;
 }
 
 #text-wrapper-s2k {
@@ -414,12 +423,7 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-.line {
-    border-top: 1px solid var(--darkgray);
-    width: 65vw;
-    margin-bottom: 4em;
-    margin-top: 4em;
-}
+
 .images-s3k {
     height: 30vh;
     width: 70vw;
@@ -435,6 +439,13 @@ h3 {
     background-size: cover;
     letter-spacing: 6px;
     padding-bottom: 1em;
+}
+
+.line {
+    border-top: 1px solid var(--darkgray);
+    width: 65vw;
+    margin-bottom: 4em;
+    margin-top: 4em;
 }
 
 .images-s3k:nth-child(7) {
@@ -510,6 +521,8 @@ h3 {
     margin-top: 2em;
     height: 10vh;
     margin-left: 1em;
+    display: flex;
+    justify-content: end;
 }
 
 .s3o {
