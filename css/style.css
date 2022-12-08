@@ -686,6 +686,39 @@ table {
     flex-direction: row;
 }
 
-@media screen and (max-width: 767px) {
 
+
+/*!
+!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!
+MEDIA QUERIES BÖRJAR HÄR!!!
+!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!
+
+
+*/
+
+@media screen and (max-width: 767px) {
+    /* .nav p {
+        pointer-events: none;
+        color: transparent;
+        user-select: none;
+        position: absolute; 
+    } */
+    .s1 {
+        width: 100vw;
+        height: 50vh;
+        justify-content: flex-end;
+    }
+    .s3k {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .images-s3k {
+        text-align: center;
+    }
+    .arrow-box {
+        position: inherit;
+    }
 }

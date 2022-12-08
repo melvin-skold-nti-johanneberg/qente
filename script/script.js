@@ -62,7 +62,25 @@ const arrowBoxLeft = document.querySelector("#box-left");
 const arrowBoxRight = document.querySelector("#box-right");
 
 
-const maxScrollLeft = document.querySelector(".card-wrapper").scrollWidth - document.querySelector(".card-wrapper").clientWidth;
+
+
+const mobileSize = window.matchMedia("(max-width: 767px)");
+let navList = document.querySelector(".navLinks");
+let navItem = navList.querySelectorAll(".navLinks > li")
+var navListChild = navList.lastElementChild
+
+if (mobileSize.matches) {
+    while (navListChild) {
+    navList.removeChild(navListChild)
+    navListChild = navList.lastElementChild;
+    }
+    console.log("works?")
+}
+
+
+
+
+
 
 document.querySelector(".card-wrapper").onscroll = function CardGradientScroll() {
     if (cardWrapper.scrollLeft > maxScrollLeft/2) {
@@ -81,6 +99,9 @@ document.querySelector(".card-wrapper").onscroll = function CardGradientScroll()
         arrowBoxRight.style.opacity = "1"
     }
 }
+
+
+const maxScrollLeft = document.querySelector(".card-wrapper").scrollWidth - document.querySelector(".card-wrapper").clientWidth;
 
 function cardWrapperScrollRight(x, y) {
     cardWrapper.scrollBy(x, y);
