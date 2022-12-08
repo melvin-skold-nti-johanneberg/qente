@@ -753,4 +753,13 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .burgerMenuToggle {
     right: 0; 
     }
+
+    .nav-dropdown-ul {
+        margin-top: 4em;
+        flex-direction: column;
+        align-items: space-around;
+        display: flex;       
+        padding-left: 2em;
+        
+    }
 }

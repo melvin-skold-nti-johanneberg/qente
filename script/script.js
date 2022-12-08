@@ -64,21 +64,21 @@ const arrowBoxRight = document.querySelector("#box-right");
 
 
 
+
 const mobileSize = window.matchMedia("(max-width: 767px)");
-let navList = document.querySelector(".navLinks");
-let navItem = navList.querySelectorAll(".navLinks > li")
-var navListChild = navList.lastElementChild
-var createBurgerDiv = document.createElement("div")
-
-var createBurgerLine1 = document.createElement("div") /* for lines */
-var createBurgerLine2 = document.createElement("div")
-var createBurgerLine3 = document.createElement("div")  /* ^^^^^^ */
-
-var createBurgerMenuBox = document.createElement("div") /* för menubox */
-var main = document.querySelector("main") /* ^^^^^^ */
 
 if (mobileSize.matches) { /* Media query box */
-    while (navListChild) {
+
+    let navList = document.querySelector(".navLinks");
+    let navItem = navList.querySelectorAll(".navLinks > li")
+    var navListChild = navList.lastElementChild
+    var createBurgerDiv = document.createElement("div")
+
+    var createBurgerLine1 = document.createElement("div") /* for lines */
+    var createBurgerLine2 = document.createElement("div")
+    var createBurgerLine3 = document.createElement("div")  /* ^^^^^^ */
+
+    while (navListChild) { /* Remove previous navbar text */
     navList.removeChild(navListChild)
     navListChild = navList.lastElementChild;
     console.log("loop works!")
@@ -96,9 +96,6 @@ if (mobileSize.matches) { /* Media query box */
     createBurgerLine3.className = "burgerLine" /* <-----> */
     console.log("renamed classnames")
 
-    main.prepend(createBurgerMenuBox) /* create burger menu box */
-    createBurgerMenuBox.className = "burgerMenuBox";
-    console.log("burger menu box created and classname given");
 }
 
 const burgerMenu = document.getElementById("burgerMenu"); 
@@ -112,7 +109,11 @@ function toggleBurgerMenu() { /* function to toggle burgermenu */
 burgerMenu.addEventListener("touchstart", toggleBurgerMenu); /* listener */
 
 
+/*
 
+Special kind of code, cursed one might say
+
+ */
 document.querySelector(".card-wrapper").onscroll = function CardGradientScroll() {
     if (cardWrapper.scrollLeft > maxScrollLeft/2) {
         gradLeft.style.opacity = "1";
