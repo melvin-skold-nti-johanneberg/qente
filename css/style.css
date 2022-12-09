@@ -818,7 +818,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         position: relative;
         font-size: 0.75em;
         overflow: hidden;
-        height: 24vh;
+        height: 27vh;
     }
     .dropdownMobileTextArrowBox {
         display: flex;
