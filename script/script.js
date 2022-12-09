@@ -96,7 +96,7 @@ if (mobileSize.matches) { /* Media query box */
     createBurgerLine3.className = "burgerLine3" /* <-----> */
     console.log("renamed classnames")
 
-}
+
 
 const burgerMenu = document.getElementById("burgerMenu"); 
 var burgerMenuBox = document.querySelector(".burgerMenuBox");
@@ -115,24 +115,54 @@ burgerMenu.addEventListener("touchstart", toggleBurgerMenu); /* listener */
 
 
 function toggleBurgerMenuListItemsLast() { /* This is to expand and minimize !LAST! burger menu */
-    let menuListHeader = document.querySelector(".dropdownMobileTextArrowBoxLast");
-    let menuListItem = document.querySelector(".dropdownMobileTinyLast");
+    let menuListHeader = document.querySelector("#dropdownMobileTextArrowBoxLast");
+    let menuListItem = document.querySelector("#dropdownMobileTinyLast");
     menuListItem.classList.toggle("dropdownMobileTinyOn");
-    console.log("expanded and minimized")
+    console.log("expanded and minimized last one")
 }
 
 function toggleBurgerMenuListItemsFirst() { /* This is to expand and minimize !LAST! burger menu */
     let menuListHeader = document.querySelector(".dropdownMobileTextArrowBoxFirst");
     let menuListItem = document.querySelector(".dropdownMobileTinyFirst");
     menuListItem.classList.toggle("dropdownMobileTinyOn");
-    console.log("expanded and minimized")
+    console.log("expanded and minimized first one")
 }
 
+var dropdownMobileTextArrowBoxLast = document.getElementById("dropdownMobileTextArrowBoxLast");
+function highlightBurgerMenuListItemsLast() { /* this is to highlight the !LAST! box on touch */
+    if(dropdownMobileTextArrowBoxLast.style.backgroundColor = "var(--white)")
+    dropdownMobileTextArrowBoxLast.style.backgroundColor = "var(--gray)"
+    setTimeout(()=> { /* Delay for color to turn back */
+        dropdownMobileTextArrowBoxLast.style.backgroundColor = "var(--white)";
+     }
+     ,100);
+}
+dropdownMobileTextArrowBoxLast.addEventListener("touchstart", highlightBurgerMenuListItemsLast);
 
+var dropdownMobileTextArrowBoxFirst = document.getElementById("dropdownMobileTextArrowBoxFirst");
+function highlightBurgerMenuListItemsFirst() { /* this is to highlight the !FIRST! box on touch */
+if(dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--white)")
+dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--gray)"
+setTimeout(()=> { /* Delay for color to turn back */
+    dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--white)";
+ }
+ ,100);
+}
+dropdownMobileTextArrowBoxFirst.addEventListener("touchstart", highlightBurgerMenuListItemsFirst);
 
-/*
+function toggleArrowRotationFirst() { /* This is rotation of arrow when expanded/minimized */
+    let burgerArrowFirst = document.getElementById("burgerArrowFirst");
+    burgerArrowFirst.classList.toggle("burgerArrowFirstOn")
+}
+dropdownMobileTextArrowBoxFirst.addEventListener("touchstart", toggleArrowRotationFirst);
 
-Special kind of code, cursed one might say
+function toggleArrowRotationLast() { /* This is rotation of arrow when expanded/minimized */
+    let burgerArrowLast = document.getElementById("burgerArrowLast");
+    burgerArrowLast.classList.toggle("burgerArrowLastOn")
+}
+dropdownMobileTextArrowBoxLast.addEventListener("touchstart", toggleArrowRotationLast);
+}
+/*Special kind of code, cursed one might say
 
  */
 document.querySelector(".card-wrapper").onscroll = function CardGradientScroll() {
