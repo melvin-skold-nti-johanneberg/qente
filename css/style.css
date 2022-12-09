@@ -709,8 +709,13 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .s1 {
         width: 100vw;
         height: 50vh;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
+
+    .h1-text-box {
+        margin-top: 8em;
+    }
+
     .s3k {
         padding-left: 0;
         padding-right: 0;
@@ -727,7 +732,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     #burgerMenu {
         margin-right: 1em;
         width: 40px;
-        height: 25px;
+        height: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -736,25 +741,25 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .burgerLine1, .burgerLine2, .burgerLine3 {
         background-color: black;
         height: 2px;
-        width: 40px;
+        width: 20px;
         border-radius: 20px;
         transition: all ease 0.3s;
 
     }
     .burgerLine1 {
-        width: 30px;
+        width: 15px;
     }
     .burgerLine2 {
-        width: 20px;
+        width: 10px;
     }
     .burgerLine1On {
-        width: 40px;
+        width: 75%;
     }
     .burgerLine2On {
-        width: 30px;
+        width: 50%;
     }
     .burgerLine3On {
-        width: 20px;
+        width: 25%;
     }
     .burgerMenuBox {
         height: 100vh;
@@ -772,19 +777,24 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     }
 
     .dropdownMobile {
-        margin-top: 4em;
+        margin-top: 6em;
         flex-direction: column;
         align-items: space-around;
         display: flex;    
         list-style: none;
         font-weight: lighter;
         text-align: center;   
-        
+        justify-content: center;
     }
+
+    .dropdownMobile div {
+        display: flex;
+    
+    }
+
     .nav-dropdown-ul div {
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
-        border-bottom: 1px solid black;
+        margin-bottom: 1em;
+        margin-top: 1em;
         width: 66.6vw;
         display: flex;
         flex-direction: row;
@@ -793,11 +803,27 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         padding-right: 1em;
     }
     .arrow-boxMobile {
-        height: 20px;        
+        height: 0.4em;        
         transform: rotate(-90deg);
+        
     }
     .burgerArrow {
         width: 20px;
         
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .s1 h1 {
+font-size: 1em;
     }
 }
