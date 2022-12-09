@@ -114,6 +114,22 @@ function toggleBurgerMenu() { /* function to toggle burgermenu */
 burgerMenu.addEventListener("touchstart", toggleBurgerMenu); /* listener */
 
 
+function toggleBurgerMenuListItemsLast() { /* This is to expand and minimize !LAST! burger menu */
+    let menuListHeader = document.querySelector(".dropdownMobileTextArrowBoxLast");
+    let menuListItem = document.querySelector(".dropdownMobileTinyLast");
+    menuListItem.classList.toggle("dropdownMobileTinyOn");
+    console.log("expanded and minimized")
+}
+
+function toggleBurgerMenuListItemsFirst() { /* This is to expand and minimize !LAST! burger menu */
+    let menuListHeader = document.querySelector(".dropdownMobileTextArrowBoxFirst");
+    let menuListItem = document.querySelector(".dropdownMobileTinyFirst");
+    menuListItem.classList.toggle("dropdownMobileTinyOn");
+    console.log("expanded and minimized")
+}
+
+
+
 /*
 
 Special kind of code, cursed one might say

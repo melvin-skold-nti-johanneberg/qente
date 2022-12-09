@@ -770,6 +770,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         background-color: var(--white);
         box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
         transition: right 0.5s ease;
+        z-index: 20;
     }
 
     .burgerMenuToggle {
@@ -785,43 +786,63 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         font-weight: lighter;
         text-align: center;   
         justify-content: center;
+        z-index: 10;
     }
 
-    .dropdownMobile div {
+    .dropdownMobileBox {
         display: flex;
-    
-    }
-
-    .nav-dropdown-ul div {
+        flex-direction: column;
         margin-bottom: 1em;
         margin-top: 1em;
+        width: 66.6vw;        
+        justify-content: space-between;
+        padding-right: 1em;
+        z-index: 10;
+    }
+    .dropdownMobileTiny { /* This is when box is minimized*/
+        font-size: 0.75em;
         width: 66.6vw;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease;
+        overflow: hidden;
+        height: 0vh;
+
+        
+    }
+    .dropdownMobileTinyOn { /* This is when box is expanded*/
+        transition: all 0.5s ease;
+        position: relative;
+        font-size: 0.75em;
+        overflow: hidden;
+        height: 24vh;
+    }
+    .dropdownMobileTextArrowBox {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding-left: 1em;
-        padding-right: 1em;
+        padding-right: 2em;
+    }
+    .dropdownMobileTextArrowBoxOn { /* This occurs when burgermenu list items are expanded*/
+        box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
+
     }
     .arrow-boxMobile {
-        height: 0.4em;        
+        width: 10%;
+        height: 10%;
         transform: rotate(-90deg);
         
     }
+    
     .burgerArrow {
-        width: 20px;
+        width: 15px;
         
     }
-
-
-
-
-
-
-
-
-
-
-
 
     .s1 h1 {
 font-size: 1em;
