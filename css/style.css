@@ -771,6 +771,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
         transition: right 0.5s ease;
         z-index: 20;
+        overflow-y: scroll;
     }
 
     .burgerMenuToggle {
@@ -796,20 +797,20 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         margin-top: 1em;
         width: 66.6vw;        
         justify-content: space-between;
-        padding-right: 1em;
         z-index: 10;
+        overflow-y: scroll;
     }
     .dropdownMobileTiny { /* This is when box is minimized*/
         font-size: 0.75em;
         width: 66.6vw;
         list-style-type: none;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         text-align: center;
         transition: all 0.5s ease;
         overflow: hidden;
         height: 0vh;
+        padding-top: 1em;
 
         
     }
@@ -820,11 +821,8 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         overflow: hidden;
         height: 27vh;
     }
-    .dropdownMobileTinyOn:nth-child(1) {
-        height: 30vh;
-    }
-    .dropdownMobileTinyOn:nth-child(2) {
-        height: 30vh;
+    .dropdownMobileTinyOn li {
+        height: 0.9em;
     }
     .dropdownMobileTextArrowBox {
         display: flex;

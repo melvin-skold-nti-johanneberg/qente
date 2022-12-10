@@ -124,8 +124,8 @@ function toggleBurgerMenuListItemsLast() { /* This is to expand and minimize !LA
 
 function toggleBurgerMenuListItemsFirst() { /* This is to expand and minimize !FIRST! burger menu */
     let menuListHeader = document.querySelector("#dropdownMobileTextArrowBoxFirst");
-    let menuListItem = document.querySelector(".dropdownMobileTinyFirst");
-    menuListItem.classList.toggle("dropdownMobileTinyOn");
+    let menuListItemFirst = document.querySelector(".dropdownMobileTinyFirst");
+    menuListItemFirst.classList.toggle("dropdownMobileTinyOn");
     menuListHeader.classList.toggle("dropdownMobileTextArrowBoxOn");
     console.log("expanded and minimized first one")
 }
