@@ -117,14 +117,16 @@ burgerMenu.addEventListener("touchstart", toggleBurgerMenu); /* listener */
 function toggleBurgerMenuListItemsLast() { /* This is to expand and minimize !LAST! burger menu */
     let menuListHeader = document.querySelector("#dropdownMobileTextArrowBoxLast");
     let menuListItem = document.querySelector("#dropdownMobileTinyLast");
+    menuListHeader.classList.toggle("dropdownMobileTextArrowBoxOn");
     menuListItem.classList.toggle("dropdownMobileTinyOn");
     console.log("expanded and minimized last one")
 }
 
-function toggleBurgerMenuListItemsFirst() { /* This is to expand and minimize !LAST! burger menu */
-    let menuListHeader = document.querySelector(".dropdownMobileTextArrowBoxFirst");
+function toggleBurgerMenuListItemsFirst() { /* This is to expand and minimize !FIRST! burger menu */
+    let menuListHeader = document.querySelector("#dropdownMobileTextArrowBoxFirst");
     let menuListItem = document.querySelector(".dropdownMobileTinyFirst");
     menuListItem.classList.toggle("dropdownMobileTinyOn");
+    menuListHeader.classList.toggle("dropdownMobileTextArrowBoxOn");
     console.log("expanded and minimized first one")
 }
 
@@ -142,7 +144,7 @@ dropdownMobileTextArrowBoxLast.addEventListener("touchstart", highlightBurgerMen
 var dropdownMobileTextArrowBoxFirst = document.getElementById("dropdownMobileTextArrowBoxFirst");
 function highlightBurgerMenuListItemsFirst() { /* this is to highlight the !FIRST! box on touch */
 if(dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--white)")
-dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--gray)"
+    dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--gray)"
 setTimeout(()=> { /* Delay for color to turn back */
     dropdownMobileTextArrowBoxFirst.style.backgroundColor = "var(--white)";
  }
@@ -162,6 +164,10 @@ function toggleArrowRotationLast() { /* This is rotation of arrow when expanded/
 }
 dropdownMobileTextArrowBoxLast.addEventListener("touchstart", toggleArrowRotationLast);
 }
+
+
+
+
 /*Special kind of code, cursed one might say
 
  */

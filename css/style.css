@@ -820,6 +820,12 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         overflow: hidden;
         height: 27vh;
     }
+    .dropdownMobileTinyOn:nth-child(1) {
+        height: 30vh;
+    }
+    .dropdownMobileTinyOn:nth-child(2) {
+        height: 30vh;
+    }
     .dropdownMobileTextArrowBox {
         display: flex;
         flex-direction: row;
@@ -830,7 +836,8 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         transition: all ease 0.1s;
     }
     .dropdownMobileTextArrowBoxOn { /* This occurs when burgermenu list items are expanded*/
-        box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
+        box-shadow:0px 3px 3px var(--darkgray);
+        
 
     }
     .arrow-boxMobile {
