@@ -780,6 +780,8 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         background-color: var(--white);
         box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
         transition: right 0.5s ease;
+        z-index: 20;
+        overflow-y: scroll;
     }
 
     .burgerMenuToggle {
@@ -795,42 +797,74 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         font-weight: lighter;
         text-align: center;   
         justify-content: center;
+        z-index: 10;
     }
 
-    .dropdownMobile div {
+    .dropdownMobileBox {
         display: flex;
-    
-    }
-
-    .nav-dropdown-ul div {
+        flex-direction: column;
         margin-bottom: 1em;
         margin-top: 1em;
+        width: 66.6vw;        
+        justify-content: space-between;
+        z-index: 10;
+        overflow-y: scroll;
+    }
+    .dropdownMobileTiny { /* This is when box is minimized*/
+        font-size: 0.75em;
         width: 66.6vw;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease;
+        overflow: hidden;
+        height: 0vh;
+        padding-top: 1em;
+
+        
+    }
+    .dropdownMobileTinyOn { /* This is when box is expanded*/
+        transition: all 0.5s ease;
+        position: relative;
+        font-size: 0.75em;
+        overflow: hidden;
+        height: 27vh;
+    }
+    .dropdownMobileTinyOn li {
+        height: 0.9em;
+    }
+    .dropdownMobileTextArrowBox {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding-left: 1em;
-        padding-right: 1em;
+        padding-right: 2em;
+        transition: all ease 0.1s;
+    }
+    .dropdownMobileTextArrowBoxOn { /* This occurs when burgermenu list items are expanded*/
+        box-shadow:0px 3px 3px var(--darkgray);
+        
+
     }
     .arrow-boxMobile {
-        height: 0.4em;        
-        transform: rotate(-90deg);
+        width: 10%;
+        height: 10%;
+        transform: rotate(-180deg);
+        transition: 0.3s ease transform;
+
         
     }
+    
     .burgerArrow {
-        width: 20px;
+        width: 15px;
+
         
     }
-
-
-
-
-
-
-
-
-
-
-
+    .burgerArrowFirstOn, .burgerArrowLastOn {
+        transform: rotate(0deg);
+        transition: 0.3s ease transform;
+    }
 
 }
