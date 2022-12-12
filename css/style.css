@@ -708,12 +708,22 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     } */
     .s1 {
         width: 100vw;
-        height: 50vh;
+        height: 80vh;
         justify-content: space-between;
+        border-bottom-right-radius: 75px;
+        border-bottom-left-radius: 75px;
     }
 
     .h1-text-box {
-        margin-top: 8em;
+        margin-top: 17em;
+        letter-spacing: 1px;
+        width: 80vw;
+    }
+
+    .h1-text-box h1 {
+        letter-spacing: 3px;
+        font-size: 1.2em;
+        font-weight: lighter;
     }
 
     .s3k {
@@ -823,7 +833,4 @@ MEDIA QUERIES BÖRJAR HÄR!!!
 
 
 
-    .s1 h1 {
-font-size: 1em;
-    }
 }
