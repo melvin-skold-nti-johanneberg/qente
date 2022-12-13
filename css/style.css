@@ -821,7 +821,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         overflow: hidden;
         height: 0vh;
         padding-top: 1em;
-        padding-left: 3em;
+        left: 30px;
 
         
     }
@@ -830,8 +830,9 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         position: relative;
         font-size: 0.75em;
         overflow: hidden;
+        overflow-x: none;
         height: 27vh;
-        width: 66.6vw;
+        width: 55vw;
     }
     .dropdownMobileTinyOn li {
         height: 0.9em;
@@ -841,7 +842,6 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-left: 1em;
         padding-right: 2em;
         transition: all ease 0.1s;
     }
