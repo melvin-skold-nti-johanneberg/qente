@@ -781,7 +781,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.1);
         transition: right 0.5s ease;
         z-index: 20;
-        overflow-y: scroll;
+        max-width: 100%;
     }
 
     .burgerMenuToggle {
@@ -808,7 +808,6 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         width: 66.6vw;        
         justify-content: space-between;
         z-index: 10;
-        overflow-y: scroll;
     }
     .dropdownMobileTiny { /* This is when box is minimized*/
         font-size: 0.75em;
@@ -822,6 +821,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         height: 0vh;
         padding-top: 1em;
         left: 30px;
+        text-overflow:ellipsis;
 
         
     }
@@ -830,9 +830,10 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         position: relative;
         font-size: 0.75em;
         overflow: hidden;
-        overflow-x: none;
+        overflow-x:hidden;
         height: 27vh;
-        width: 55vw;
+        width: 66.6vw;
+        max-width: 100%;
     }
     .dropdownMobileTinyOn li {
         height: 0.9em;
@@ -843,6 +844,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         justify-content: space-between;
         align-items: center;
         padding-right: 2em;
+        padding-left: 1em;
         transition: all ease 0.1s;
     }
     .dropdownMobileTextArrowBoxOn { /* This occurs when burgermenu list items are expanded*/
