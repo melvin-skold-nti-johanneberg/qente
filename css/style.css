@@ -221,7 +221,7 @@ main {
 }
 
 .s1h {
-    background-image: url(/img/QÂ´ente\ och\ Kronhusparken\ profilbild\ juni2017.jpg);
+    background-image: url(/img/QÂ´ente\ och\ Kronhusparken\ profilbild\ juni2017.jpg);
     background-size: cover;
 }
 
@@ -777,6 +777,9 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .burgerLine3On {
         width: 25%;
     }
+    .dropdownMobile {
+        display: block;
+    }
     .burgerMenuBox {
         height: 100vh;
         width: 66.6vw;
@@ -788,6 +791,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         transition: right 0.5s ease;
         z-index: 20;
         max-width: 100%;
+        display: block;
     }
 
     .burgerMenuToggle {
@@ -877,4 +881,52 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         transition: 0.3s ease transform;
     }
 
+    .s2h {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2em;
+        padding-right: 2em;
+
+    }
+    .s2h .button {
+        margin-top: 4em;
+    }
+    .text-wrapper {
+        width: 80%;
+    }
+    .card {
+        width: 40vw;
+    }
+    .card-wrapper {
+        grid-auto-columns: 50%;
+    }
+    .card-image1 {
+        border-radius: 0;
+    }
+    .arrow {
+        width: 24px;
+    }
+    #box-right {
+        margin-right: 0;
+    }
+    #box-left {
+        margin-left: 0;
+    }
+    footer {
+        align-items: center;
+    }
+    .text-footer-wrapper {
+        width: 80%;
+    }
+    .icon-wrapper {
+        max-width: 80vw;
+    }
+    .s1h {
+        justify-content: flex-end;
+        
+    }
+    .s1h .arrow-box {
+        margin-top: 20em;
+    }
 }
+
