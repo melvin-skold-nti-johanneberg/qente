@@ -924,5 +924,16 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .s1h .arrow-box {
         margin-top: 20em;
     }
+    .s1o {
+        background-size: 300%;
+        background-position-x: -300px;
+        justify-content: flex-end;
+    }
+    .s1o .arrow-box {
+        margin-top: 10em;
+    }
+    .s3o h2 {
+        margin-bottom: 1em;
+    }
 }
 
