@@ -896,8 +896,10 @@ MEDIA QUERIES BÖRJAR HÄR!!!
     .card-wrapper {
         grid-auto-columns: 50%;
     }
-    .card-image1 {
-        border-radius: 0;
+    .card {
+        border-top-left-radius: 3em;
+        border-top-right-radius: 1em;
+        
     }
     .arrow {
         width: 24px;
