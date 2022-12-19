@@ -857,11 +857,7 @@ MEDIA QUERIES BÖRJAR HÄR!!!
         padding-left: 1em;
         transition: all ease 0.1s;
     }
-    .dropdownMobileTextArrowBoxOn { /* This occurs when burgermenu list items are expanded*/
-        box-shadow:0px 1px 3px var(--darkgray);
-        
 
-    }
     .arrow-boxMobile {
         width: 10%;
         height: 10%;
