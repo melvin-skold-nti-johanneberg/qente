@@ -161,13 +161,10 @@ html {
     position:relative;
     z-index: 1;
   }
-  .nav-dropdown-ul li:hover {
-    color: var(--white);
-  }
   .nav-dropdown-ul li:after {
     display: block;
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
     bottom: 0;
     right: 0;
@@ -184,7 +181,7 @@ html {
   .nav-dropdown-ul li:hover:after {
     opacity: 1;
     visibility: visible;
-    height: 25%;
+    height: 10%;
     transition: all ease 0.3s;
   }
   
